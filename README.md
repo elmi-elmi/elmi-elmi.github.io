@@ -14,10 +14,10 @@ Dashboard, multi step forms, agent page, dynamic filters with meilisearch,....
 Forms, english home page...
 
 [icib.co](https://icib.co/en),
-advance dynamic filter, search with multi tab, dashboard,  so many multi forms in dashboard
+advance dynamic filter, search with multi tab, dashboard,  so many multi forms in dashboard, auth, login with OAuth2, google and social
 
 [Adlieh](https://adlieh.com/), 
-ai chat bot, my fullstack project,  Nextjs, laravel + chatgpt api
+ai chat bot, my fullstack project,  Nextjs, laravel + chatgpt api,  auth, login with OAuth2, google and social
 
 [Quarkino](http://quarkino.com/), 
 
