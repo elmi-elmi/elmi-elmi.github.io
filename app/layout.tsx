@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alireza Elmi Portfolio",
-  description: "Frontend / Fullstack Developer Portfolio",
+   title: "Alireza Elmi Portfolio",
+  description: "Portfolio of Alireza Elmi, Frontend Developer specializing in React, Next.js, Vue, and scalable web applications with a focus on performance and reusable architectures.",
+ 
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
