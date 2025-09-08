@@ -54,7 +54,7 @@ const HERO = {
     name: "Alireza Elmi",
     role: "Frontend Developer",
     aboutBase: "building scalable, high-performance interfaces in React, Next.js, and Vue. Experienced across e‑commerce, multilingual sites, AI systems, and Meilisearch-powered search with a focus on reusable architecture and performance.",
-    yearsStart: 2019,
+    yearsStart: 2020,
     avatarSrc: "",
     location: {
         city: "Shiraz",
