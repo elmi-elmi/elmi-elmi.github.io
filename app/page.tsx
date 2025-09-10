@@ -39,7 +39,7 @@ interface SocialLink {
 
 const LABELS = {
     heroWhoAmI: "whoami",
-    heroSkills: "skills --primary",
+    heroSkills: "skills --core",
     projects: "Featured Projects",
     achievements: "Key Achievements:",
     experience: "Professional Experience",
@@ -77,10 +77,10 @@ const SKILLS_CATEGORIES = {
 
 const PRIMARY_SKILLS: string[] = [
     "TypeScript",
-    "React",
+    // "React",
     "Next.js",
     "Vue",
-    "Tailwind CSS",
+    // "Tailwind CSS",
     "Laravel",
 ];
 
@@ -328,7 +328,7 @@ function SocialIcon({ icon }: { icon: SocialLink['icon'] }) {
 export default function Portfolio() {
     const currentYear = new Date().getFullYear();
     const years = Math.max(1, currentYear - HERO.yearsStart);
-    const about = `Senior Frontend Developer with ${years}+ years of experience ${HERO.aboutBase}`;
+    const about = `${years}+ years of experience ${HERO.aboutBase}`;
 
     return (
         <main className="min-h-screen bg-[#0A0A0A] text-white overflow-x-hidden antialiased">
@@ -337,7 +337,7 @@ export default function Portfolio() {
                 <div className="absolute inset-0" aria-hidden="true">
                     <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-br from-green-600/20 via-blue-600/20 to-purple-600/10 opacity-20" aria-hidden="true"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-green-600/20 via-blue-600/20 to-purple-600/20 " aria-hidden="true"></div>
 
                 {/*<div className="absolute inset-0" aria-hidden="true">*/}
                 {/*    <div className="absolute inset-0 opacity-20">*/}
@@ -353,7 +353,7 @@ export default function Portfolio() {
                 {/*</div>*/}
 
                 <div className="relative z-10 max-w-5xl w-full mx-4">
-                    <div className="bg-black/60 backdrop-blur-xl rounded-2xl border border-gray-700/50 p-8 shadow-2xl">
+                    <div className="bg-black/60 backdrop-blur-xl rounded-2xl border border-gray-700/50 p-4 sm:p-8 shadow-2xl">
                         <div className="flex items-center gap-4 mb-6">
                             {HERO.avatarSrc &&
                                 <div className="relative w-16 h-16 rounded-full overflow-hidden ring-2 ring-gray-700/50">
@@ -405,7 +405,7 @@ export default function Portfolio() {
                 </div>
 
                 {/* Scroll indicator */}
-                <a href="#projects" className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+                <a href="#projects" className="absolute hidden sm:block bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
                     <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
                         <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-pulse"></div>
                     </div>
@@ -428,7 +428,7 @@ export default function Portfolio() {
                         {PROJECTS.map((project, index) => (
                             <article
                                 key={project.id}
-                                className="bg-gradient-to-br from-gray-900/80 to-gray-800/50 rounded-2xl p-8 backdrop-blur-sm border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 shadow-xl"
+                                className="bg-gradient-to-br from-gray-900/80 to-gray-800/50 rounded-2xl p-4 sm:p-8 backdrop-blur-sm border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 shadow-xl"
                             >
                                 <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                                     <div className="flex-1">
@@ -510,7 +510,7 @@ export default function Portfolio() {
                             {EXPERIENCES.map((exp, index) => (
                                 <article
                                     key={exp.id}
-                                    className=" bg-gradient-to-br from-gray-900/90 to-gray-800/60 rounded-2xl p-8 ml-0 md:ml-20 backdrop-blur-sm border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 shadow-xl"
+                                    className=" bg-gradient-to-br from-gray-900/90 to-gray-800/60 rounded-2xl p-4 sm:p-8 ml-0 md:ml-20 backdrop-blur-sm border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 shadow-xl"
                                 >
                                     {/* Timeline dot */}
                                     <div className="absolute -start-14 top-8 w-4 h-4 bg-green-400 rounded-full border-4 border-gray-900 hidden md:block"></div>
@@ -551,7 +551,7 @@ export default function Portfolio() {
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/60 rounded-xl p-6 border border-gray-700/50">
-                            <h3 className="text-xl font-semibold text-white mb-2">{EDUCATION.masters.degree}</h3>
+                        <h3 className="text-xl font-semibold text-white mb-2">{EDUCATION.masters.degree}</h3>
                             <p className="text-green-400 font-medium mb-1">{EDUCATION.masters.university}</p>
                             <p className="text-gray-400 mb-3">{EDUCATION.masters.date}</p>
                             <p className="text-purple-300 text-sm">{EDUCATION.masters.achievement}</p>
@@ -625,7 +625,7 @@ export default function Portfolio() {
                         <h3 className="text-3xl font-bold mb-12 text-center text-purple-400">Technical Skills</h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {Object.entries(SKILLS_CATEGORIES).map(([category, skills]) => (
-                                <div key={category} className="bg-gradient-to-br from-gray-900/80 to-gray-800/50 rounded-xl p-6 border border-gray-700/50">
+                                <div key={category} className="bg-gradient-to-br from-gray-900/20 to-gray-800/50 rounded-xl p-6 border border-gray-700/50">
                                     <h4 className="text-lg font-bold text-purple-300 mb-4">{category}</h4>
                                     <div className="flex flex-wrap gap-2">
                                         {skills.map((skill) => (
@@ -647,9 +647,8 @@ export default function Portfolio() {
             {/* Contact Section */}
             <section id="contact" className="py-24 px-4">
                 <div className="max-w-4xl mx-auto">
-                    <div className="relative p-10 rounded-3xl overflow-hidden backdrop-blur-xl border border-gray-700/50 bg-black/70 shadow-2xl">
-                        <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 via-blue-500/10 to-purple-500/5" aria-hidden="true"></div>
-
+                    <div className="relative p-3 md:p-10 rounded-3xl overflow-hidden backdrop-blur-xl border border-gray-700/50 bg-black/70 shadow-2xl">
+                        <div className="absolute  inset-0 bg-gradient-to-br from-green-500/20 via-blue-500/20 to-purple-500/10" ></div>
                         <div className="relative z-10">
                             <div className="flex items-center gap-2 mb-8" aria-hidden="true">
                                 <div className="w-3 h-3 rounded-full bg-red-500 animate-pulse"></div>
