@@ -336,19 +336,23 @@ export default function Portfolio() {
         <main className="min-h-screen bg-[#0A0A0A] text-white overflow-x-hidden antialiased">
             {/* Hero Section */}
             <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-green-600/20 via-blue-600/20 to-purple-600/10 opacity-20" aria-hidden="true"></div>
                 <div className="absolute inset-0" aria-hidden="true">
-                    <div className="absolute inset-0 opacity-20">
-                        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <pattern id="dot-pattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
-                                    <circle cx="30" cy="30" r="1" fill="#9C92AC" fillOpacity="0.3"/>
-                                </pattern>
-                            </defs>
-                            <rect width="100%" height="100%" fill="url(#dot-pattern)"/>
-                        </svg>
-                    </div>
+                    <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
                 </div>
+                <div className="absolute inset-0 bg-gradient-to-br from-green-600/20 via-blue-600/20 to-purple-600/10 opacity-20" aria-hidden="true"></div>
+
+                {/*<div className="absolute inset-0" aria-hidden="true">*/}
+                {/*    <div className="absolute inset-0 opacity-20">*/}
+                {/*        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">*/}
+                {/*            <defs>*/}
+                {/*                <pattern id="dot-pattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">*/}
+                {/*                    <circle cx="30" cy="30" r="1" fill="#9C92AC" fillOpacity="0.3"/>*/}
+                {/*                </pattern>*/}
+                {/*            </defs>*/}
+                {/*            <rect width="100%" height="100%" fill="url(#dot-pattern)"/>*/}
+                {/*        </svg>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
 
                 <div className="relative z-10 max-w-5xl w-full mx-4">
                     <div className="bg-black/60 backdrop-blur-xl rounded-2xl border border-gray-700/50 p-8 shadow-2xl">
