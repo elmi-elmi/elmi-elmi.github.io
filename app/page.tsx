@@ -57,7 +57,7 @@ const LABELS = {
 const HERO = {
     name: "Alireza Elmi",
     role: "Senior Frontend Developer",
-    aboutBase: "Specialized in building scalable, high-performance web applications using React, Next.js, Vue, and TypeScript. Expert in e-commerce platforms, multilingual systems, AI integrations, and advanced search implementations with a focus on performance optimization and reusable architecture.",
+    aboutBase: "Specialized in building scalable, high-performance web applications.",
     yearsStart: 2020,
     avatarSrc: "",
     location: {
@@ -82,7 +82,6 @@ const PRIMARY_SKILLS: string[] = [
     "Vue",
     "Tailwind CSS",
     "Laravel",
-    "Node.js"
 ];
 
 const PROJECTS: Project[] = [
