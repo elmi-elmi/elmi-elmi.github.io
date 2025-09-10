@@ -98,7 +98,7 @@ const PROJECTS: Project[] = [
         ],
         tech: ["Next.js", "TypeScript", "Meilisearch", "WebSocket", "React Hook Form", "Zod", "Tailwind CSS"],
         links: {
-            demo: "#" // اگر لینک دمو دارید
+            demo: "https://www.icib.co/en"
         }
     },
     {
@@ -114,7 +114,7 @@ const PROJECTS: Project[] = [
         ],
         tech: ["Laravel", "Next.js", "OpenAI API", "TypeScript", "PostgreSQL", "Redis"],
         links: {
-            demo: "#"
+            demo: "https://adlieh.com/"
         }
     },
     {
@@ -130,7 +130,7 @@ const PROJECTS: Project[] = [
         ],
         tech: ["Next.js", "React", "Tailwind CSS", "React Hook Form", "Zustand", "TypeScript"],
         links: {
-            demo: "#"
+            demo: "https://depoint.ir/"
         }
     }
 ];
@@ -268,7 +268,6 @@ const IMPACT: ImpactSection[] = [
                 title: "Full-Stack & DevOps",
                 bullets: [
                     "Backend development with Laravel, Node.js, NestJS",
-                    "Database design with PostgreSQL, Redis optimization",
                     "CI/CD pipelines with Docker and modern deployment",
                     "Testing strategies with Jest and end-to-end testing"
                 ],
