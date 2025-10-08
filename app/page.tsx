@@ -422,7 +422,6 @@ export default function Portfolio() {
            'Senior Frontend Developer',
   'Next.js & TypeScript Expert',
   'Full-Stack Developer',
-  "Familar with Vue, Nuxt, Angular",
   'Go & Blockchain Enthusiast'
             ]} 
           
