@@ -1,3 +1,4 @@
+import Typewriter from '@/app/components/Typewriter';
 import React from 'react';
 
 interface Experience {
@@ -406,16 +407,28 @@ export default function Portfolio() {
                                 {LABELS.heroWhoAmI}
                             </p>
 
+
+
                             <div className="space-y-2">
                                 <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
                                     {HERO.name}
                                 </h1>
-                                <p className="text-xl md:text-2xl text-green-400 font-semibold">{HERO.role}</p>
+                                 
                             </div>
 
-                            <p className="text-gray-300 text-lg leading-relaxed max-w-4xl">
-                                {about}
-                            </p>
+                            <div className="text-gray-300 text-lg leading-relaxed max-w-4xl">
+                                <Typewriter 
+              texts={[
+           'Senior Frontend Developer',
+  'Next.js & TypeScript Expert',
+  'Full-Stack Developer',
+  "Familar with Vue, Nuxt, Angular",
+  'Go & Blockchain Enthusiast'
+            ]} 
+          
+            />
+                               
+                            </div>
 
                             <div className="pt-4">
                                 <p className="text-green-400 text-lg mb-3">
