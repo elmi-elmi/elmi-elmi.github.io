@@ -86,8 +86,41 @@ const PRIMARY_SKILLS: string[] = [
 
 const PROJECTS: Project[] = [
     {
+        id: 4,
+        name: "Realtime Chat App (#Personal Project)",
+        description: "Real-time messaging platform with low-latency performance and seamless synchronization",
+        achievements: [
+            "Built real-time messaging via WebSocket using Laravel Reverb and Echo",
+            "Integrated backend with Inertia.js for smooth React–Laravel communication",
+            "Developed reusable and accessible UI components with Radix UI and Tailwind CSS",
+            "Optimized WebSocket performance for minimal latency and efficient updates"
+        ],
+        tech: ["Laravel 12", "Inertia.js", "React", "TypeScript", "Tailwind CSS", "Radix UI", "Reverb", "Echo"],
+        links: {
+            demo: "#",
+            github: "https://github.com/elmi-elmi/fullstack-messenger"
+        }
+    },
+    {
+        id: 5,
+        name: "JWT Auth (#Personal Project)",
+        description: "Production-ready authentication app built with modern Next.js stack",
+        achievements: [
+            "Developed secure JWT authentication with in-memory storage and httpOnly cookies",
+            "Implemented validation with Zod and React Hook Form for robust form handling",
+            "Integrated React Query and Zustand for data fetching and state management",
+            "Optimized performance via code splitting, lazy loading, and image optimization",
+            "Added smooth UI animations for enhanced user experience"
+        ],
+        tech: ["Next.js 15", "TypeScript", "React Query", "Zustand", "Zod", "Tailwind CSS"],
+        links: {
+            demo: "https://auth-nextjs-dun.vercel.app/",
+            github: "https://github.com/elmi-elmi/auth-nextjs"
+        }
+    },
+    {
         id: 1,
-        name: "ICIB - International Multilingual Platform",
+        name: "ICIB - International Multilingual Platform (#Real Project)",
         description: "Advanced 10-language platform with intelligent search and real-time analytics",
         achievements: [
             "Built dynamic filters with Meilisearch integration for lightning-fast search",
@@ -103,7 +136,7 @@ const PROJECTS: Project[] = [
     },
     {
         id: 2,
-        name: "Adlieh AI - Intelligent Chat Platform",
+        name: "Adlieh AI - Intelligent Chat Platform (#Real Project)",
         description: "Full-stack AI-powered chatbot platform with advanced conversational capabilities",
         achievements: [
             "Architected end-to-end system with Laravel backend and Next.js API routes",
@@ -119,7 +152,7 @@ const PROJECTS: Project[] = [
     },
     {
         id: 3,
-        name: "Depoint - E-commerce & Payment System",
+        name: "Depoint - E-commerce & Payment System (#Real Project)",
         description: "Complete e-commerce solution with advanced payment processing and admin dashboard",
         achievements: [
             "Developed comprehensive checkout system (cash, installments, wallet payments)",
@@ -142,7 +175,7 @@ const EXPERIENCES: Experience[] = [
         subtitle: "SaaS - Low Code/No Code Platform",
         date: "Remote | May 2023 – Present",
         items: [
-            "Led migration strategy from Vue 2 to Next.js, improving performance by 60%",
+            "Played a key role in migration from Vue 2 to Next.js, improving performance by 60%",
             "Architected scalable service layers and reusable components for cross-project efficiency",
             "Developed advanced RESTful client-side services using React Query",
             "Built complex multi-step forms with Zod validation and ShadCN UI components",
@@ -244,7 +277,7 @@ const IMPACT: ImpactSection[] = [
             {
                 title: "Team Impact",
                 bullets: [
-                    "Led hiring processes and onboarded 5+ new developers",
+                    "Collaborated on hiring processes and onboarded 3+ new developers",
                     "Mentored junior developers improving team productivity",
                     "Managed complex migration projects (Vue 2 → Next.js)",
                     "Reduced bug reports by 50% through improved documentation"
@@ -399,6 +432,28 @@ export default function Portfolio() {
                                         </span>
                                     ))}
                                 </div>
+
+
+                            </div>
+
+                            {/* Resume */}
+                            <div>
+                                <p className="text-green-400 text-lg mb-3">
+                                    <span className="mr-2">$</span>
+                                    {LABELS.contactResumeCmd}
+                                </p>
+                                <a
+                                    href={CONTACT.resumeHref}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    download
+                                    className="inline-flex items-center gap-3 px-6 py-3 bg-purple-500/10 text-purple-400 rounded-lg border border-purple-500/20 hover:bg-purple-500/20 transition-colors text-lg"
+                                >
+                                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"></path>
+                                    </svg>
+                                    <span>Download Resume</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -424,7 +479,7 @@ export default function Portfolio() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 gap-8">
+                    <div className="grid grid-cols-1 gapflex flex-wrap gap-3-8">
                         {PROJECTS.map((project, index) => (
                             <article
                                 key={project.id}
