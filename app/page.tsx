@@ -98,7 +98,6 @@ const PROJECTS: Project[] = [
         ],
         tech: ["Laravel 12", "Inertia.js", "React", "TypeScript", "Tailwind CSS", "Radix UI", "Reverb", "Echo"],
         links: {
-            demo: "#",
             github: "https://github.com/elmi-elmi/fullstack-messenger"
         }
     },
