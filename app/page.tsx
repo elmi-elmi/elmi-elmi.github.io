@@ -88,8 +88,8 @@ const PRIMARY_SKILLS: string[] = [
 const PROJECTS: Project[] = [
     {
         id: 4,
-        name: "Realtime Chat App (#Personal Project)",
-        description: "Real-time messaging platform with low-latency performance and seamless synchronization",
+        name: "Realtime Chat App",
+        description: "Real-time messaging platform with low-latency performance and seamless synchronization (#Personal Project)",
         achievements: [
             "Built real-time messaging via WebSocket using Laravel Reverb and Echo",
             "Integrated backend with Inertia.js for smooth React–Laravel communication",
@@ -104,8 +104,8 @@ const PROJECTS: Project[] = [
     },
     {
         id: 5,
-        name: "JWT Auth (#Personal Project)",
-        description: "Production-ready authentication app built with modern Next.js stack",
+        name: "JWT Auth",
+        description: "Production-ready authentication app built with modern Next.js stack  (#Personal Project)",
         achievements: [
             "Developed secure JWT authentication with in-memory storage and httpOnly cookies",
             "Implemented validation with Zod and React Hook Form for robust form handling",
@@ -121,8 +121,8 @@ const PROJECTS: Project[] = [
     },
     {
         id: 1,
-        name: "ICIB - International Multilingual Platform (#Real Project)",
-        description: "Advanced 10-language platform with intelligent search and real-time analytics",
+        name: "ICIB - International Multilingual Platform",
+        description: "Advanced 10-language platform with intelligent search and real-time analytics  (#Real Project)",
         achievements: [
             "Built dynamic filters with Meilisearch integration for lightning-fast search",
             "Developed real-time analytics dashboard using WebSocket (Bugsy)",
@@ -137,8 +137,8 @@ const PROJECTS: Project[] = [
     },
     {
         id: 2,
-        name: "Adlieh AI - Intelligent Chat Platform (#Real Project)",
-        description: "Full-stack AI-powered chatbot platform with advanced conversational capabilities",
+        name: "Adlieh AI - Intelligent Chat Platform",
+        description: "Full-stack AI-powered chatbot platform with advanced conversational capabilities  (#Real Project)",
         achievements: [
             "Architected end-to-end system with Laravel backend and Next.js API routes",
             "Integrated OpenAI ChatGPT API for sophisticated conversational AI",
@@ -153,8 +153,8 @@ const PROJECTS: Project[] = [
     },
     {
         id: 3,
-        name: "Depoint - E-commerce & Payment System (#Real Project)",
-        description: "Complete e-commerce solution with advanced payment processing and admin dashboard",
+        name: "Depoint - E-commerce & Payment System",
+        description: "Complete e-commerce solution with advanced payment processing and admin dashboard  (#Real Project)",
         achievements: [
             "Developed comprehensive checkout system (cash, installments, wallet payments)",
             "Built sophisticated admin dashboard for order and payment management",
@@ -422,7 +422,8 @@ export default function Portfolio() {
            'Senior Frontend Developer',
   'Next.js & TypeScript Expert',
   'Full-Stack Developer',
-  'Go & Blockchain Enthusiast'
+  'Go & Blockchain Enthusiast',
+  "Trading, Forex"
             ]} 
           
             />
@@ -500,7 +501,7 @@ export default function Portfolio() {
                                 <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                                     <div className="flex-1">
                                         <div className="flex items-start justify-between mb-4">
-                                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                                            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2">
                                                 {project.name}
                                             </h3>
                                             {project.links && (
