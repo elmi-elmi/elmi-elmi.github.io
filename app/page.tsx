@@ -87,6 +87,23 @@ const PRIMARY_SKILLS: string[] = [
 
 const PROJECTS: Project[] = [
     {
+        id: 5,
+        name: "JWT Auth",
+        description: "Production-ready authentication app built with modern Next.js stack  (#Personal Project)",
+        achievements: [
+            "Developed secure JWT authentication with httpOnly cookies, protected against XSS and CSRF attacks",
+            "Implemented validation with Zod and React Hook Form for robust form handling",
+            "Integrated React Query and Zustand for data fetching and state management",
+            "Optimized performance via code splitting, lazy loading, and image optimization",
+            "Added smooth UI animations for enhanced user experience"
+        ],
+        tech: ["Next.js 15", "TypeScript", "React Query", "Zustand", "Zod", "Tailwind CSS"],
+        links: {
+            demo: "https://auth-nextjs-dun.vercel.app/",
+            github: "https://github.com/elmi-elmi/auth-nextjs"
+        }
+    },
+    {
         id: 4,
         name: "Realtime Chat App",
         description: "Real-time messaging platform with low-latency performance and seamless synchronization (#Personal Project)",
@@ -101,23 +118,7 @@ const PROJECTS: Project[] = [
             github: "https://github.com/elmi-elmi/fullstack-messenger"
         }
     },
-    {
-        id: 5,
-        name: "JWT Auth",
-        description: "Production-ready authentication app built with modern Next.js stack  (#Personal Project)",
-        achievements: [
-            "Developed secure JWT authentication with in-memory storage and httpOnly cookies",
-            "Implemented validation with Zod and React Hook Form for robust form handling",
-            "Integrated React Query and Zustand for data fetching and state management",
-            "Optimized performance via code splitting, lazy loading, and image optimization",
-            "Added smooth UI animations for enhanced user experience"
-        ],
-        tech: ["Next.js 15", "TypeScript", "React Query", "Zustand", "Zod", "Tailwind CSS"],
-        links: {
-            demo: "https://auth-nextjs-dun.vercel.app/",
-            github: "https://github.com/elmi-elmi/auth-nextjs"
-        }
-    },
+
     {
         id: 1,
         name: "ICIB - International Multilingual Platform",
@@ -418,11 +419,11 @@ export default function Portfolio() {
                             <div className="text-gray-300 text-lg leading-relaxed max-w-4xl">
                                 <Typewriter 
               texts={[
-           'Senior Frontend Developer',
-  'Next.js & TypeScript Expert',
-  'Full-Stack Developer',
-  'Go & Blockchain Enthusiast',
-  "Trading, Forex"
+           'Frontend Developer',
+            'Next.js & TypeScript Expert',
+            'Full-Stack Developer',
+            'Go & Blockchain Enthusiast',
+            "Trade, Crypto, Forex"
             ]} 
           
             />
@@ -491,11 +492,11 @@ export default function Portfolio() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 gapflex flex-wrap gap-3-8">
+                    <div className="flex flex-row *:flex-1 overflow-x-scroll w-full pb-10 *:sm:basis-10/12 *:basis-11/12 *:shrink-0 gap-3 sm:gap-8">
                         {PROJECTS.map((project, index) => (
                             <article
                                 key={project.id}
-                                className="bg-gradient-to-br from-gray-900/80 to-gray-800/50 rounded-2xl p-4 sm:p-8 backdrop-blur-sm border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 shadow-xl"
+                                className="bg-gradient-to-br from-gray-900/80  to-gray-800/50 rounded-2xl p-4 sm:p-8 backdrop-blur-sm border border-gray-500/50 hover:border-gray-400/50 transition-all duration-300 drop-shadow-sm drop-shadow-gray-500"
                             >
                                 <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                                     <div className="flex-1">
@@ -571,13 +572,14 @@ export default function Portfolio() {
 
                     <div className="relative">
                         {/* Timeline line */}
-                        <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-green-400 via-blue-400 to-purple-400 hidden md:block"></div>
+                        {/*<div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-green-400 via-blue-400 to-purple-400 hidden md:block"></div>*/}
 
-                        <div className="space-y-8">
+                        {/*<div className="space-y-8">*/}
+                        <div className="flex flex-row *:flex-1 overflow-x-scroll w-full pb-10 *:sm:basis-10/12 *:basis-11/12 *:shrink-0 gap-3 sm:gap-8">
                             {EXPERIENCES.map((exp, index) => (
                                 <article
                                     key={exp.id}
-                                    className=" bg-gradient-to-br from-gray-900/90 to-gray-800/60 rounded-2xl p-4 sm:p-8 ml-0 md:ml-20 backdrop-blur-sm border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 shadow-xl"
+                                    className=" bg-gradient-to-br from-gray-900/90 to-gray-800/60 rounded-2xl p-4 sm:p-8 ml-0 md:ml-20 backdrop-blur-sm border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 drop-shadow-sm drop-shadow-gray-500"
                                 >
                                     {/* Timeline dot */}
                                     <div className="absolute -start-14 top-8 w-4 h-4 bg-green-400 rounded-full border-4 border-gray-900 hidden md:block"></div>
@@ -617,14 +619,14 @@ export default function Portfolio() {
                     </h2>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/60 rounded-xl p-6 border border-gray-700/50">
+                        <div className="bg-gradient-to-br from-gray-900/80 drop-shadow-sm drop-shadow-gray-500 to-gray-800/60 rounded-xl p-6 border border-gray-700/50">
                         <h3 className="text-xl font-semibold text-white mb-2">{EDUCATION.masters.degree}</h3>
                             <p className="text-green-400 font-medium mb-1">{EDUCATION.masters.university}</p>
                             <p className="text-gray-400 mb-3">{EDUCATION.masters.date}</p>
                             <p className="text-purple-300 text-sm">{EDUCATION.masters.achievement}</p>
                         </div>
 
-                        <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/60 rounded-xl p-6 border border-gray-700/50">
+                        <div className="bg-gradient-to-br from-gray-900/80 drop-shadow-sm drop-shadow-gray-500 to-gray-800/60 rounded-xl p-6 border border-gray-700/50">
                             <h3 className="text-xl font-semibold text-white mb-2">{EDUCATION.bachelors.degree}</h3>
                             <p className="text-green-400 font-medium mb-1">{EDUCATION.bachelors.university}</p>
                             <p className="text-gray-400 mb-3">{EDUCATION.bachelors.date}</p>
@@ -633,7 +635,7 @@ export default function Portfolio() {
                     </div>
 
                     {/* Languages */}
-                    <div className="mt-12">
+                    <div className="mt-12 ">
                         <h3 className="text-2xl font-bold mb-6 text-center text-gray-200">Languages</h3>
                         <div className="flex justify-center gap-6 flex-wrap">
                             {LANGUAGES.map((lang) => (
@@ -650,7 +652,7 @@ export default function Portfolio() {
             {/* Impact & Skills Section */}
             <section id="impact" className="py-24 px-4 bg-gradient-to-b from-black/50 to-gray-900/50">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-16 ">
                         <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
                             {LABELS.impact}
                         </h2>
@@ -661,7 +663,7 @@ export default function Portfolio() {
 
                     <div className="space-y-16">
                         {IMPACT.map((section, idx) => (
-                            <div key={idx}>
+                            <div key={idx} className={"drop-shadow-sm drop-shadow-gray-500"}>
                                 <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center text-green-400">
                                     {section.sectionTitle}
                                 </h3>
@@ -692,7 +694,7 @@ export default function Portfolio() {
                         <h3 className="text-3xl font-bold mb-12 text-center text-purple-400">Technical Skills</h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {Object.entries(SKILLS_CATEGORIES).map(([category, skills]) => (
-                                <div key={category} className="bg-gradient-to-br from-gray-900/20 to-gray-800/50 rounded-xl p-6 border border-gray-700/50">
+                                <div key={category} className="bg-gradient-to-br from-gray-900/20 to-gray-800/50 rounded-xl p-6 border border-gray-700/50 drop-shadow-sm drop-shadow-gray-500">
                                     <h4 className="text-lg font-bold text-purple-300 mb-4">{category}</h4>
                                     <div className="flex flex-wrap gap-2">
                                         {skills.map((skill) => (
