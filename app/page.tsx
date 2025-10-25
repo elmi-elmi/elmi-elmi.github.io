@@ -579,10 +579,10 @@ export default function Portfolio() {
                             {EXPERIENCES.map((exp, index) => (
                                 <article
                                     key={exp.id}
-                                    className=" bg-gradient-to-br from-gray-900/90 to-gray-800/60 rounded-2xl p-4 sm:p-8 ml-0 md:ml-20 backdrop-blur-sm border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 drop-shadow-sm drop-shadow-gray-500"
+                                    className=" bg-gradient-to-br from-gray-900/90 to-gray-800/60 rounded-2xl p-4 sm:p-8  backdrop-blur-sm border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 drop-shadow-sm drop-shadow-gray-500"
                                 >
                                     {/* Timeline dot */}
-                                    <div className="absolute -start-14 top-8 w-4 h-4 bg-green-400 rounded-full border-4 border-gray-900 hidden md:block"></div>
+                                    {/*<div className="absolute -start-14 top-8 w-4 h-4 bg-green-400 rounded-full border-4 border-gray-900 hidden md:block"></div>*/}
 
                                     <header className="mb-6">
                                         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-2 mb-2">
@@ -611,107 +611,107 @@ export default function Portfolio() {
                 </div>
             </section>
 
-            {/* Education Section */}
-            <section id="education" className="py-16 px-4 bg-gradient-to-b from-gray-900/50 to-black/50">
-                <div className="max-w-6xl mx-auto">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                        {LABELS.education}
-                    </h2>
+            {/*/!* Education Section *!/*/}
+            {/*<section id="education" className="py-16 px-4 bg-gradient-to-b from-gray-900/50 to-black/50">*/}
+            {/*    <div className="max-w-6xl mx-auto">*/}
+            {/*        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">*/}
+            {/*            {LABELS.education}*/}
+            {/*        </h2>*/}
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        <div className="bg-gradient-to-br from-gray-900/80 drop-shadow-sm drop-shadow-gray-500 to-gray-800/60 rounded-xl p-6 border border-gray-700/50">
-                        <h3 className="text-xl font-semibold text-white mb-2">{EDUCATION.masters.degree}</h3>
-                            <p className="text-green-400 font-medium mb-1">{EDUCATION.masters.university}</p>
-                            <p className="text-gray-400 mb-3">{EDUCATION.masters.date}</p>
-                            <p className="text-purple-300 text-sm">{EDUCATION.masters.achievement}</p>
-                        </div>
+            {/*        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">*/}
+            {/*            <div className="bg-gradient-to-br from-gray-900/80 drop-shadow-sm drop-shadow-gray-500 to-gray-800/60 rounded-xl p-6 border border-gray-700/50">*/}
+            {/*            <h3 className="text-xl font-semibold text-white mb-2">{EDUCATION.masters.degree}</h3>*/}
+            {/*                <p className="text-green-400 font-medium mb-1">{EDUCATION.masters.university}</p>*/}
+            {/*                <p className="text-gray-400 mb-3">{EDUCATION.masters.date}</p>*/}
+            {/*                <p className="text-purple-300 text-sm">{EDUCATION.masters.achievement}</p>*/}
+            {/*            </div>*/}
 
-                        <div className="bg-gradient-to-br from-gray-900/80 drop-shadow-sm drop-shadow-gray-500 to-gray-800/60 rounded-xl p-6 border border-gray-700/50">
-                            <h3 className="text-xl font-semibold text-white mb-2">{EDUCATION.bachelors.degree}</h3>
-                            <p className="text-green-400 font-medium mb-1">{EDUCATION.bachelors.university}</p>
-                            <p className="text-gray-400 mb-3">{EDUCATION.bachelors.date}</p>
-                            <p className="text-purple-300 text-sm">{EDUCATION.bachelors.achievement}</p>
-                        </div>
-                    </div>
+            {/*            <div className="bg-gradient-to-br from-gray-900/80 drop-shadow-sm drop-shadow-gray-500 to-gray-800/60 rounded-xl p-6 border border-gray-700/50">*/}
+            {/*                <h3 className="text-xl font-semibold text-white mb-2">{EDUCATION.bachelors.degree}</h3>*/}
+            {/*                <p className="text-green-400 font-medium mb-1">{EDUCATION.bachelors.university}</p>*/}
+            {/*                <p className="text-gray-400 mb-3">{EDUCATION.bachelors.date}</p>*/}
+            {/*                <p className="text-purple-300 text-sm">{EDUCATION.bachelors.achievement}</p>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
 
-                    {/* Languages */}
-                    <div className="mt-12 ">
-                        <h3 className="text-2xl font-bold mb-6 text-center text-gray-200">Languages</h3>
-                        <div className="flex justify-center gap-6 flex-wrap">
-                            {LANGUAGES.map((lang) => (
-                                <div key={lang.name} className="text-center">
-                                    <p className="text-white font-medium">{lang.name}</p>
-                                    <p className="text-gray-400 text-sm">{lang.level}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </section>
+            {/*        /!* Languages *!/*/}
+            {/*        <div className="mt-12 ">*/}
+            {/*            <h3 className="text-2xl font-bold mb-6 text-center text-gray-200">Languages</h3>*/}
+            {/*            <div className="flex justify-center gap-6 flex-wrap">*/}
+            {/*                {LANGUAGES.map((lang) => (*/}
+            {/*                    <div key={lang.name} className="text-center">*/}
+            {/*                        <p className="text-white font-medium">{lang.name}</p>*/}
+            {/*                        <p className="text-gray-400 text-sm">{lang.level}</p>*/}
+            {/*                    </div>*/}
+            {/*                ))}*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
 
-            {/* Impact & Skills Section */}
-            <section id="impact" className="py-24 px-4 bg-gradient-to-b from-black/50 to-gray-900/50">
-                <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-16 ">
-                        <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
-                            {LABELS.impact}
-                        </h2>
-                        <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-                            Comprehensive technical expertise and measurable business impact
-                        </p>
-                    </div>
+            {/*/!* Impact & Skills Section *!/*/}
+            {/*<section id="impact" className="py-24 px-4 bg-gradient-to-b from-black/50 to-gray-900/50">*/}
+            {/*    <div className="max-w-7xl mx-auto">*/}
+            {/*        <div className="text-center mb-16 ">*/}
+            {/*            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">*/}
+            {/*                {LABELS.impact}*/}
+            {/*            </h2>*/}
+            {/*            <p className="text-gray-400 text-lg max-w-2xl mx-auto">*/}
+            {/*                Comprehensive technical expertise and measurable business impact*/}
+            {/*            </p>*/}
+            {/*        </div>*/}
 
-                    <div className="space-y-16">
-                        {IMPACT.map((section, idx) => (
-                            <div key={idx} className={"drop-shadow-sm drop-shadow-gray-500"}>
-                                <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center text-green-400">
-                                    {section.sectionTitle}
-                                </h3>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    {section.cards.map((card, i) => (
-                                        <div
-                                            key={i}
-                                            className="bg-gradient-to-br from-gray-900/90 to-gray-800/60 rounded-xl p-6 border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 shadow-lg hover:shadow-xl"
-                                        >
-                                            <h4 className="text-xl font-bold text-white mb-4">{card.title}</h4>
-                                            <ul className="space-y-3">
-                                                {card.bullets.map((bullet, bi) => (
-                                                    <li key={bi} className="flex items-start gap-3">
-                                                        <div className="w-1.5 h-1.5 rounded-full bg-yellow-400 mt-2 flex-shrink-0"></div>
-                                                        <span className="text-gray-300 leading-relaxed">{bullet}</span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+            {/*        <div className="space-y-16">*/}
+            {/*            {IMPACT.map((section, idx) => (*/}
+            {/*                <div key={idx} className={"drop-shadow-sm drop-shadow-gray-500"}>*/}
+            {/*                    <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center text-green-400">*/}
+            {/*                        {section.sectionTitle}*/}
+            {/*                    </h3>*/}
+            {/*                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">*/}
+            {/*                        {section.cards.map((card, i) => (*/}
+            {/*                            <div*/}
+            {/*                                key={i}*/}
+            {/*                                className="bg-gradient-to-br from-gray-900/90 to-gray-800/60 rounded-xl p-6 border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 shadow-lg hover:shadow-xl"*/}
+            {/*                            >*/}
+            {/*                                <h4 className="text-xl font-bold text-white mb-4">{card.title}</h4>*/}
+            {/*                                <ul className="space-y-3">*/}
+            {/*                                    {card.bullets.map((bullet, bi) => (*/}
+            {/*                                        <li key={bi} className="flex items-start gap-3">*/}
+            {/*                                            <div className="w-1.5 h-1.5 rounded-full bg-yellow-400 mt-2 flex-shrink-0"></div>*/}
+            {/*                                            <span className="text-gray-300 leading-relaxed">{bullet}</span>*/}
+            {/*                                        </li>*/}
+            {/*                                    ))}*/}
+            {/*                                </ul>*/}
+            {/*                            </div>*/}
+            {/*                        ))}*/}
+            {/*                    </div>*/}
+            {/*                </div>*/}
+            {/*            ))}*/}
+            {/*        </div>*/}
 
-                    {/* Technical Skills Grid */}
-                    <div className="mt-20">
-                        <h3 className="text-3xl font-bold mb-12 text-center text-purple-400">Technical Skills</h3>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            {Object.entries(SKILLS_CATEGORIES).map(([category, skills]) => (
-                                <div key={category} className="bg-gradient-to-br from-gray-900/20 to-gray-800/50 rounded-xl p-6 border border-gray-700/50 drop-shadow-sm drop-shadow-gray-500">
-                                    <h4 className="text-lg font-bold text-purple-300 mb-4">{category}</h4>
-                                    <div className="flex flex-wrap gap-2">
-                                        {skills.map((skill) => (
-                                            <span
-                                                key={skill}
-                                                className="text-xs px-2 py-1 bg-purple-500/10 text-purple-200 rounded border border-purple-500/20"
-                                            >
-                                                {skill}
-                                            </span>
-                                        ))}
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </section>
+            {/*        /!* Technical Skills Grid *!/*/}
+            {/*        <div className="mt-20">*/}
+            {/*            <h3 className="text-3xl font-bold mb-12 text-center text-purple-400">Technical Skills</h3>*/}
+            {/*            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">*/}
+            {/*                {Object.entries(SKILLS_CATEGORIES).map(([category, skills]) => (*/}
+            {/*                    <div key={category} className="bg-gradient-to-br from-gray-900/20 to-gray-800/50 rounded-xl p-6 border border-gray-700/50 drop-shadow-sm drop-shadow-gray-500">*/}
+            {/*                        <h4 className="text-lg font-bold text-purple-300 mb-4">{category}</h4>*/}
+            {/*                        <div className="flex flex-wrap gap-2">*/}
+            {/*                            {skills.map((skill) => (*/}
+            {/*                                <span*/}
+            {/*                                    key={skill}*/}
+            {/*                                    className="text-xs px-2 py-1 bg-purple-500/10 text-purple-200 rounded border border-purple-500/20"*/}
+            {/*                                >*/}
+            {/*                                    {skill}*/}
+            {/*                                </span>*/}
+            {/*                            ))}*/}
+            {/*                        </div>*/}
+            {/*                    </div>*/}
+            {/*                ))}*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
 
             {/* Contact Section */}
             <section id="contact" className="py-24 px-4">
