@@ -59,7 +59,7 @@ const HERO = {
     name: "Alireza Elmi",
     role: "Senior Frontend Developer",
     aboutBase: "Specialized in building scalable, high-performance web applications.",
-    yearsStart: 2020,
+    yearsStart: 2019,
     avatarSrc: "",
     location: {
         city: "Shiraz",
